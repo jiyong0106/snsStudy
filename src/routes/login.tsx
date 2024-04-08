@@ -41,7 +41,7 @@ const Login = () => {
         <Input type="submit" value={isLoading ? "Loading" : "Login"} />
       </Form>
       <Switcher>
-        계정이 없으신가요? <Link to="/createAccount">계정 생성🙌</Link>
+        계정이 없으신가요?? <Link to="/createAccount">계정 생성🙌</Link>
       </Switcher>
       <GithubBtn/>
     </Wrapper>
