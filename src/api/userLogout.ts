@@ -5,12 +5,10 @@ const useUserLogout = () => {
   const navigate = useNavigate();
 
   const userLogout = async () => {
-    try {
+    const ok = window.confirm("로그아웃 하시겠습니까?");
+    if (ok) {
       await auth.signOut();
-      alert("로그아웃되었습니다.");
       navigate("/login");
-    } catch (e) {
-      console.error("error");
     }
   };
   return userLogout;
